@@ -1,0 +1,353 @@
+/* Estilos generales para todos los elementos */
+* {
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    padding: 0; /* Elimina el padding por defecto de todos los elementos */
+    font-size: 1.2vw; /* Define un tamaño de fuente relativo basado en el ancho de la ventana */
+}
+
+/* ----------------------- HEADER ----------------------- */
+
+/* Estilos para el contenedor principal del header */
+header {
+    width: 100%; /* El header ocupa todo el ancho de la pantalla */
+    height: 15vh; /* La altura del header es el 15% de la altura de la ventana */
+    max-height: 150px; /* La altura máxima del header es de 150px */
+    border-bottom: 0.1vw solid #006293; /* Línea de borde en la parte inferior, con color azul oscuro */
+}
+
+/* Estilos para el contenedor principal del main */
+main {
+    text-align: center; /* Centra el texto dentro de main */
+    width: 100%; /* El main ocupa todo el ancho de la pantalla */
+    min-height: 65%; /* La altura mínima de main es el 65% de la altura de la ventana */
+    /* height: fit-content; */ /* Comentado, ya que se busca una altura mínima en lugar de ajustarse al contenido */
+}
+
+/* Estilos para el footer */
+footer {
+    width: 100%; /* El footer ocupa todo el ancho de la pantalla */
+    height: 20vh; /* La altura del footer es el 20% de la altura de la ventana */
+    color: white; /* El texto del footer es blanco */
+    clear: both; /* Limpia cualquier flotado previo (evita problemas con elementos flotantes) */
+    background-color: #006293; /* Color de fondo azul oscuro */
+}
+
+/* ----------------------- HEADER ----------------------- */
+
+/* Estilos para el div dentro del header (probablemente un logo o imagen) */
+header div {
+    float: left; /* Hace que el div flote a la izquierda */
+    width: 12%; /* El ancho del div es el 12% del contenedor padre */
+    height: 80%; /* La altura del div es el 80% de la altura del header */
+    margin: 0.5% 3.5%; /* Espaciado alrededor del div, 0.5% arriba y abajo, 3.5% a los lados */
+}
+
+/* Estilos para la imagen dentro del div en el header */
+header img {
+    display: block; /* Elimina el espacio en blanco debajo de la imagen */
+    height: auto; /* La altura de la imagen se ajusta automáticamente para mantener las proporciones */
+    max-width: 100%; /* La imagen ocupa como máximo el 100% del ancho de su contenedor */
+}
+
+/* ----------------------- NAV ----------------------- */
+
+/* Estilos para el contenedor del nav (barra de navegación) */
+nav {
+    width: 80%; /* El ancho del nav es el 80% del contenedor padre */
+    height: 100%; /* El nav ocupa el 100% de la altura del contenedor */
+    float: right; /* Hace que el nav flote a la derecha */
+    background-color: #006293; /* El fondo del nav es azul oscuro */
+    color: white; /* El texto dentro del nav es blanco */
+}
+
+/* Estilos para los enlaces dentro del nav */
+nav > a {
+    color: #fff; /* El color del texto de los enlaces es blanco */
+    font-size: 2em;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    float: right; /* Hace que los enlaces se alineen a la derecha */
+    margin: 5.8vh 12%; /* Márgenes en la parte superior e inferior, 5.8% respecto a la altura de la ventana, 12% a los lados */
+}
+
+
+
+/*  MAIN  */
+
+/* Estilo para el contenedor principal */
+main {
+    height: auto; /* La altura del elemento se ajusta automáticamente al contenido */
+    min-height: 50vh; /* La altura mínima es el 50% de la altura de la ventana del navegador */
+    /* display: inline-block; */
+    /* display: flow-root; */
+    padding: 5% 0; /* Espaciado en la parte superior e inferior, 5% del alto del contenedor */
+}
+
+/* Estilo para los divs dentro del contenedor principal */
+main > div {
+    background-color: rgb(219, 219, 219); /* Color de fondo gris claro */
+    border-radius: 100px; /* Bordes redondeados con un radio de 100px */
+    width: 50%; /* Ancho del div es el 50% del contenedor principal */
+    height: 94%; /* La altura se establece en el 94% del contenedor principal */
+    height: fit-content; /* La altura se ajusta automáticamente al contenido */
+    text-align: center; /* Centra el texto dentro del div */
+    margin: 0 25% 0 25%; /* Márgenes: 0 en la parte superior e inferior, 25% en los lados izquierdo y derecho */
+    padding: 3% 0 0 0; /* Espaciado interno, 3% en la parte superior */
+}
+
+/* Estilo para las imágenes dentro del contenedor principal */
+main img {
+    width: 10%; /* La imagen ocupa el 10% del ancho de su contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+}
+
+/* Estilo para los elementos <span> dentro del contenedor principal */
+main span {
+    font-size: 2.5em; /* Tamaño de fuente grande, 2.5 veces el tamaño de la fuente base */
+    color: #006293; /* Color de texto azul oscuro */
+}
+
+/* Estilo para los campos de texto y contraseñas */
+main input[type="text"],
+main input[type="password"] {
+    background-color: transparent; /* Fondo transparente */
+    border: 3px solid #006293; /* Borde de 3px con color azul oscuro */
+    width: 60%; /* Ancho del campo de texto es el 60% del contenedor */
+    padding: 15px 0 15px 15px; /* Espaciado interno, 15px en los lados izquierdo y arriba */
+}
+
+/* Estilo para los placeholders dentro de los campos de texto y contraseñas */
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #006293; /* Color de texto del placeholder en azul oscuro */
+    font-weight: bold; /* Texto del placeholder en negrita */
+}
+
+/* Estilo para el campo de texto específico */
+main input[type="text"] {
+    margin-top: 1.5rem; /* Márgenes superiores de 1.5 rem */
+    border-bottom: none; /* Elimina el borde inferior */
+    border-radius: 20px 20px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+/* Estilo para el campo de contraseña específico */
+main input[type="password"] {
+    border-radius: 0px 0 20px 20px; /* Bordes redondeados solo en la parte inferior */
+}
+
+/* Estilo para el botón de envío */
+main input[type="submit"] {
+    padding: 2%; /* Espaciado interno del botón */
+    width: 50%; /* El botón ocupa el 50% del ancho del contenedor */
+    margin: 2rem 0; /* Márgenes superior e inferior de 2 rem */
+    border-radius: 13px; /* Bordes redondeados del botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    background-color: #599ABA; /* Fondo azul claro */
+    color: white; /* Texto blanco */
+}
+
+/* ----------------------- FOOTER ----------------------- */
+
+/* Estilos para el footer */
+footer {
+    width: 100%; /* El footer ocupa todo el ancho de la pantalla */
+    height: 20vh; /* La altura del footer es el 20% de la altura de la ventana */
+    color: white; /* El texto del footer es blanco */
+    /* clear: both; */ /* Comentado: se usaba para limpiar flotados de elementos previos */
+    background-color: #006293; /* Color de fondo azul oscuro */
+    /* margin-top: auto; */ /* Comentado: no se aplica margen superior aquí */
+}
+
+/* Estilos para los divs dentro del footer */
+footer div {
+    float: left; /* Hace que los divs floten a la izquierda */
+    width: 31%; /* El ancho de cada div es el 31% del contenedor */
+    height: 15vh; /* La altura de cada div es el 15% de la altura del footer */
+    margin-top: 1.2%; /* Márgenes superiores de 1.2% */
+}
+
+/* Línea divisoria dentro del footer */
+.lineaFooter {
+    margin-right: 3.2%; /* Márgenes a la derecha */
+    border-right: 0.1vw solid #417b9876; /* Línea divisoria delgada de color gris */
+}
+
+/* Estilos para los títulos dentro del footer */
+footer h3 {
+    font-size: 1.4vw; /* Tamaño de fuente relativo a la ventana */
+    margin: 1vh; /* Márgenes de 1vh alrededor del título */
+}
+
+/* Estilos para el primer div dentro del footer */
+footer div:nth-child(1) p {
+    margin: 1vh 3vw; /* Márgenes de 1vh arriba y abajo, 3vw a los lados */
+}
+
+/* Estilos para las listas dentro del footer */
+footer div:nth-child(2) ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+}
+
+/* Estilos para los elementos <li> dentro del footer */
+footer li {
+    float: left; /* Los elementos de la lista flotan a la izquierda */
+    width: 45%; /* Cada elemento ocupa el 45% del ancho del div */
+    text-align: center; /* Centra el texto dentro de cada <li> */
+    margin: 0.5vh 0; /* Márgenes superior e inferior de 0.5vh */
+}
+
+/* Estilos para los enlaces dentro del tercer div del footer */
+footer div:nth-child(3) a {
+    display: block; /* Los enlaces se convierten en bloques, ocupando todo el ancho */
+    margin: 3.4vh 5vw; /* Márgenes alrededor de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Color de los enlaces es blanco */
+}
+
+
+/* ----------------------- Media Queries ----------------------- */
+
+/* Media Query para pantallas de tamaño medio (menos de 1220px de ancho, porque el footer y el header necesitan menos ajuste) */
+
+@media (width <= 1220px) {
+/* -----------HEADER ------------- */
+    header div {
+        width: 18%; /* El ancho del div dentro del header se ajusta al 18% */
+        margin: 0.5% 1%; /* Ajusta los márgenes */
+    }
+
+    /* Estilo para los enlaces en el nav */
+    nav > a {
+        margin-right: 5vw; /* Ajusta el margen derecho de los enlaces */
+    }
+
+/* -----------FOOTER ------------- */
+
+    /* Estilo para los elementos dentro del footer */
+    footer div, footer h3, footer p, footer a {
+        font-size: 1.4em; /* Aumenta el tamaño de la fuente de los elementos */
+    }
+
+    /* Estilo para los elementos de lista dentro del footer */
+    footer ul li {
+        font-size: 1.8em; /* Aumenta el tamaño de la fuente de los elementos de lista */
+    }
+
+}
+
+/* ----------------------- MAIN ----------------------- */
+
+/* Media Query para pantallas de tamaño medio, como tablets (menos de 1400px de ancho) */
+@media (width <= 1400px) {
+    /* Estilo para el contenedor main */
+    main {
+        padding: 8.5% 0; /* Aumenta el padding del main para un mejor espaciado */
+    }
+
+    /* Estilo para el div dentro de main */
+    main > div {
+        width: 60%; /* Aumenta el ancho del div al 60% */
+        margin: 0 20%; /* Ajusta el margen de los lados */
+        padding: 15% 0; /* Ajusta el padding para mejor espaciado */
+    }
+
+    /* Estilo para las imágenes dentro de main */
+    main img {
+        width: 17%; /* Aumenta el tamaño de la imagen al 17% */
+        margin-bottom: 2em; /* Aumenta el margen inferior de la imagen */
+    }
+
+    /* Estilo para el texto dentro de main */
+    main span {
+        font-size: 3em; /* Aumenta el tamaño de la fuente */
+    }
+
+    /* Estilo para el campo de texto */
+    main input[type="text"] {
+        margin-top: 3em; /* Aumenta el margen superior */
+        border-bottom: none; /* Elimina el borde inferior */
+        border-radius: 20px 20px 0 0; /* Bordes redondeados en la parte superior */
+    }
+
+    /* Estilo para los placeholders */
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder {
+        font-size: 1.5em; /* Aumenta el tamaño de la fuente del placeholder */
+    }
+
+    /* Estilo para el botón de envío */
+    main input[type="submit"] {
+        font-size: 2em; /* Aumenta el tamaño de la fuente del botón */
+        margin: 2em 0; /* Ajusta los márgenes del botón */
+    }
+}
+
+/* Media Query para pantallas muy pequeñas (móviles, menos de 550px) */
+@media (max-width: 550px) {
+    header img{
+        margin-top: 5vh;
+    }
+
+    /* Aumenta el tamaño de la fuente de los elementos dentro de nav*/
+    nav > a{
+        font-size: 3em; /* Aumenta el tamaño de la fuente a 3em */
+        margin: 5.8vh 6.7%;
+    }
+
+    /* Ajusta el padding del main para pantallas más pequeñas */
+    main {
+        padding: 18% 0; /* Aumenta el padding superior e inferior */
+    }
+
+    /* Estilo para el div dentro de main */
+    main > div {
+        padding: 1% 0 15% 0; /* Ajusta el padding interno */
+        border-radius: 44px; /* Sin bordes redondeados */
+        height: 80%; /* Ajusta la altura del div */
+    }
+
+    /* Estilo para el texto dentro de main */
+    main span {
+        font-size: 5em; /* Aumenta significativamente el tamaño de la fuente */
+    }
+
+    /* Estilo para las imágenes dentro de main */
+    main img {
+        width: 20%; /* Aumenta el tamaño de la imagen */
+        height: auto; /* Mantiene las proporciones */
+        margin: 6em 0 2em 0; /* Ajusta los márgenes de la imagen */
+    }
+
+    /* Estilo para los placeholders */
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder {
+        font-size: 1.9em; /* Aumenta el tamaño de la fuente del placeholder */
+    }
+
+    /* Estilo para el campo de texto */
+    main input[type="text"] {
+        margin-top: 7em; /* Aumenta el margen superior */
+        border-bottom: none; /* Elimina el borde inferior */
+    }
+
+    /* Estilo para el botón de envío */
+    main input[type="submit"] {
+        font-size: 2.5em; /* Aumenta el tamaño de la fuente del botón */
+        margin: 4em 0; /* Ajusta los márgenes del botón */
+        border-radius: 5px; /* Bordes redondeados para el botón */
+    }
+
+    /*------FOOTER--------*/
+    footer div, footer h3, footer p, footer a {
+        font-size: 1.5em; /* Aumenta el tamaño de la fuente de los elementos */
+    }
+    
+    /* Estilo para los elementos de lista dentro del footer */
+    footer ul li {
+        font-size: 1.9em; /* Aumenta el tamaño de la fuente de los elementos de lista */
+    }
+    .lineaFooter{
+        margin: 3vh 3.2% 0 0%;
+        
+    }
+}
+
